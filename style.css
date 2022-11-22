@@ -56,7 +56,7 @@ ul {
     font-family: var(--font-txt);
     font-size: 20px;
     text-transform: uppercase;
-    /* display: none; */
+    display: none;
 }
 
 ul li{
@@ -67,18 +67,27 @@ ul li a{
     color: white;
 }
 
-section{
+h1{
+    color: white;
+    font-size: 50px;
+    font-family: var(--nav-bar);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container{
     display: flex;
     flex-direction: column;
     margin: 5%;
 }
 
-section div{
+.flex-container div{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-section div p{
+.flex-container div p{
     border: 20px solid var(--cadre-txt);
     border-radius: 16px;
     color: white;
@@ -86,8 +95,13 @@ section div p{
     margin: 5%;
 }
 
-section div img{
+.flex-container div img{
     border-radius: 20px;
     width: 90%;
     box-shadow: 5px 5px 5px 5px #B0B0B0;
+}
+
+footer{
+    min-height: 60px;
+    background-color: var(--cadre-txt);
 }
