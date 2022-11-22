@@ -75,6 +75,7 @@ h1{
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .flex-container{
@@ -118,3 +119,6 @@ footer div i{
 .fa-brands{
     color: var(--logo);
 }
+
+
+
