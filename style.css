@@ -26,7 +26,11 @@ nav{
     margin: 20px;
 }
 header{
-    background-color: green;
+    background-image: url(assets/accueil.jpeg) ;
+    background-size: cover ;
+    padding-top: 20px;
+    height: 60vh;
+    
 }
 
 .dark-mode{
@@ -44,12 +48,14 @@ header{
     border: none;
 }
 
+
 ul {
-    background-color: blue;
+    /* background-color: blue; */
     text-align: center;
     font-family: var(--font-txt);
     font-size: 20px;
     text-transform: uppercase;
+    /* display: none; */
 }
 
 ul li{
