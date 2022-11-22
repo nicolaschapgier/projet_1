@@ -103,10 +103,18 @@ h1{
 }
 
 footer{
-    min-height: 60px;
     background-color: var(--cadre-txt);
 }
 
-.fa-brands .fa-facebook{
+footer div{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div i{
+    padding: 3%;
+}
+
+.fa-brands{
     color: var(--logo);
 }
