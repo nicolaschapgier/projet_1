@@ -20,7 +20,6 @@
 }
 
 body{
-    background-color: red;
 }
 nav{
     margin: 20px;
@@ -65,4 +64,24 @@ ul li{
 ul li a{
     color: white;
 }
+section{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section div p{
+    border: 10px solid var(--cadre-txt);
+    border-radius: 16px;
+    color: white;
+    background-color: var(--cadre-txt);
+}
 
+section div img{
+    border-radius: 20px;
+    width: 80%;
+}
