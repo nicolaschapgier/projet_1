@@ -16,6 +16,7 @@
     --bg-color:#F1F1F1;
     --title1:#61ACCF;
     --cadre-txt:#1E3D59;
+    --logo:#CD4669;
     /* Font */
     --nav-bar: 'Nunito', sans-serif;
     --font-txt: 'Roboto', sans-serif;
@@ -104,4 +105,8 @@ h1{
 footer{
     min-height: 60px;
     background-color: var(--cadre-txt);
+}
+
+.fa-brands .fa-facebook{
+    color: var(--logo);
 }
