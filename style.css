@@ -70,8 +70,6 @@ header{
     transform: translateX(60px);
 }
 
-/* icone position maybe later */
-
 .dark-mode i{
     color : #ffd363;
     transition: opacity calc(var(--dark-mode) + 1s);
