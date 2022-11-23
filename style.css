@@ -208,7 +208,8 @@ h2{
     border-radius: 30px;
 }
 
-.first-container div img{
+.first-container div img,
+.second-container div img{
     border-radius: 20px;
     width: 75%;
     height: 40vh;
