@@ -14,8 +14,8 @@ switchBox.addEventListener('click',function(){
     console.log("spouew");
     btn.classList.toggle("btn-change");
     body.classList.toggle("body-change");
-    imgShadow.classList.toggle("img-shadow-change");
     moon.classList.toggle("fa-moon-change");
     sun.classList.toggle("fa-sun-change");
+    imgShadow.classList.toggle("img-shadow-change");
 })
 
