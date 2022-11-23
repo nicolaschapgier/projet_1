@@ -182,6 +182,10 @@ footer div i{
     color: var(--logo);
 }
 
+
+/*********************************************Activités***********************************/
+
+
 .main-container{
     display: flex;
     flex-direction: column;
@@ -213,6 +217,12 @@ h2{
     height: 40vh;
 }
 
+
+
+
+/*********************************************Infos utiles***********************************/
+
+
 .contain-info{
     display: flex;
     flex-direction: column;
@@ -231,9 +241,44 @@ h2{
     flex-direction: column;
 }
 
-.contain-first-info div img,
-.contain-second-info iframe{
+.contain-first-info div img
+{
     border-radius: 20px;
     width: 75%;
     height: 40vh;
 }
+
+.contain-second-info iframe{
+    border-radius: 20px;
+    width: 100%;
+    height: 50vh;
+
+}
+
+.contain-second-info{
+    display: flex;
+    align-items: center;
+    margin: 40px;
+}
+
+.paragraphe-hidden{
+    border: 20px solid var(--cadre-txt);
+    border-radius: 16px;
+    color: white;
+    background-color: var(--cadre-txt);
+    margin: 5%;
+}
+
+h3{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: var(--logo);
+    font-size: 20px;
+    margin: 0 12%;
+    height: 10vh;
+    border-radius: 30px;
+}
+
