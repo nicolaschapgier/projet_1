@@ -193,15 +193,17 @@ footer div i{
 .second-container{
     display: flex;
     flex-direction: column;
-    
 }
 
 h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
     background-color: var(--logo);
     font-size: 40px;
     margin: 10%;
     height: 20vh;
-    text-transform: uppercase;
     border-radius: 30px;
 }
 
