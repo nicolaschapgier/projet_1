@@ -2,6 +2,7 @@ let switchBox = document.querySelector(".dark-mode");
 let btn = document.querySelector(".btn");
 // let icone = document.querySelector("i");
 let body = document.querySelector("body");
+let imgShadow = document.querySelector(".flex-container div img")
 
 
 console.log(switchBox);
@@ -15,4 +16,6 @@ switchBox.addEventListener('click',function(){
     // icone.classList.toggle("icone-change")
     // icone.classList.toggle("fa-sun");
     body.classList.toggle("body-change")
+    imgShadow.classList.toggle("img-shadow-change")
 })
+
