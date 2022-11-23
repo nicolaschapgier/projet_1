@@ -274,7 +274,7 @@ h2{
 
 h3{
 
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
@@ -282,6 +282,6 @@ h3{
     font-size: 20px;
     margin: 0 12%;
     height: 10vh;
-    border-radius: 30px;
+    border-radius: 30px; */
 }
 
