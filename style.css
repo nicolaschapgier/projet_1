@@ -212,3 +212,28 @@ h2{
     width: 75%;
     height: 40vh;
 }
+
+.contain-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contain-first-info,
+.contain-second-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.countain-first-info div,
+.contain-second-info div{
+    display: flex;
+    flex-direction: column;
+}
+
+.contain-first-info div img,
+.contain-second-info iframe{
+    border-radius: 20px;
+    width: 75%;
+    height: 40vh;
+}
