@@ -24,6 +24,7 @@
 
 body{
     background-color: var(--bg-color);
+    transition: 2s;
 }
 
 .body-change{
@@ -33,6 +34,7 @@ body{
 nav{
     margin: 20px;
 }
+
 header{
     background-image: url(assets/accueil.jpeg) ;
     background-size: cover ;
