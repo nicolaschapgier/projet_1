@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
+@import url('https://css.gg/css?=|facebook');
+
+
+:root{
+    /* Color */
+    --bg-color:#F1F1F1;
+    --title1:#61ACCF;
+    --cadre-txt:#1E3D59;
+    --logo:#CD4669;
+    /* Font */
+    --nav-bar: 'Nunito', sans-serif;
+    --font-txt: 'Roboto', sans-serif;
+    /* Transition */
+    --dark-mode: 0.7s;
+}
+
+body{
+    background-color: var(--bg-color);
+    transition: var(--dark-mode);
+}
+
+.body-change{
+    background-color: black;
+}
+
+nav{
+    margin: 20px;
+}
+
+header{
+    background-image: url(assets/accueil.jpeg) ;
+    background-size: cover ;
+    padding-top: 20px;
+    height: 60vh;
+    
+}
+
+.dark-mode{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    transition: transform var(--dark-mode);
+}
+
+.btn-change{
+    transform: translateX(60px);
+}
+
+/* icone position maybe later */
+
+.dark-mode i{
+    color : #ffd363;
+    transition: opacity calc(var(--dark-mode) + 1s);
+
+}
+
+.fa-moon{
+    position: absolute;
+    margin-left: 72px;
+
+}
+
+.fa-moon-change{
+    opacity: 0%;
+}
+
+.fa-sun{
+    opacity: 0%;
+    position: absolute;
+    margin-left: 8px;
+}
+
+.fa-sun-change{
+    opacity: 100%;
+}
+
+ul {
+    /* background-color: blue; */
+    text-align: center;
+    font-family: var(--font-txt);
+    font-size: 20px;
+    text-transform: uppercase;
+    display: none;
+}
+
+ul li{
+    margin: 20px;    
+}
+
+ul li a{
+    color: white;
+}
+
+h1{
+    color: white;
+    border-radius: 20px;
+    font-size: 50px;
+    font-family: var(--nav-bar);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.flex-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-container div p{
+    border: 20px solid var(--cadre-txt);
+    border-radius: 16px;
+    color: white;
+    background-color: var(--cadre-txt);
+    margin: 5%;
+}
+
+.flex-container div img{
+    border-radius: 20px;
+    width: 90%;
+}
+
+.img-shadow{
+    box-shadow: 5px 5px 5px 5px #B0B0B0;
+    transition: var(--dark-mode);
+}
+
+.img-shadow-change{
+    box-shadow: none;
+}
+
+footer{
+    background-color: var(--cadre-txt);
+}
+
+footer div{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div i{
+    padding: 3%;
+}
+
+.fa-brands{
+    color: var(--logo);
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.second-container{
+
+}
+
+
+
+h2{
+    background-color: blue;
+    font-size: 40px;
+    width: 80vw;
+    height: 20vh;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
