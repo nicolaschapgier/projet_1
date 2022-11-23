@@ -189,14 +189,11 @@ footer div i{
     text-align: center;
 }
 
-.first-container{
+.first-container,
+.second-container{
     display: flex;
     flex-direction: column;
     
-}
-
-.second-container{
-
 }
 
 h2{
