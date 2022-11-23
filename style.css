@@ -24,7 +24,7 @@
 
 body{
     background-color: var(--bg-color);
-    transition: 2s;
+    transition: 0.7s;
 }
 
 .body-change{
@@ -58,19 +58,18 @@ header{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    position: absolute;
+    /* position: absolute; */
     border: none;
-    
+    transition: transform 1s;
 }
 
 .btn-change{
-    right: 1px;
-    left: auto;
+    transform: translateX(60px);
 }
 
 /* moon position */
 
-.dark-mode i{
+/* .dark-mode i{
     position: absolute;
     color : #ffd363;
     top: 6px;
@@ -79,7 +78,7 @@ header{
 
 .icone-change{
     left : 20px;
-}
+} */
 
 
 ul {
