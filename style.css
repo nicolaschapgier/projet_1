@@ -42,7 +42,10 @@ header{
     background-size: cover ;
     padding-top: 20px;
     height: 60vh;
-    
+}
+
+img{
+    margin-top: 10%;
 }
 
 .dark-mode{
