@@ -60,7 +60,7 @@ header{
     border-radius: 50%;
     /* position: absolute; */
     border: none;
-    transition: transform 1s;
+    transition: transform 0.7s;
 }
 
 .btn-change{
@@ -135,6 +135,7 @@ h1{
 
 .img-shadow{
     box-shadow: 5px 5px 5px 5px #B0B0B0;
+    transition: 0.7s;
 }
 
 .img-shadow-change{
