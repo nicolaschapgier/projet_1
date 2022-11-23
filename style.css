@@ -153,6 +153,11 @@ h1{
     margin: 5%;
 }
 
+.paragraphe h3,
+.paragraphe p{
+    color: white;
+}
+
 .flex-container div img{
     border-radius: 20px;
     width: 90%;
