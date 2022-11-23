@@ -22,6 +22,14 @@
     --font-txt: 'Roboto', sans-serif;
 }
 
+body{
+    background-color: var(--bg-color);
+}
+
+.body-change{
+    background-color: black;
+}
+
 nav{
     margin: 20px;
 }
@@ -35,17 +43,40 @@ header{
 
 .dark-mode{
     background-color: black;
+    display: flex;
     width: 90px;
+    position: relative;
     height: 30px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
-.switch{
+.btn{
     background-color: white;
     width: 30px;
     height: 30px;
-    border-radius: 30px;
+    border-radius: 50%;
+    position: absolute;
     border: none;
+    
+}
+
+.btn-change{
+    right: 1px;
+    left: auto;
+}
+
+/* moon position */
+
+.dark-mode i{
+    position: absolute;
+    color : #ffd363;
+    top: 6px;
+    right: 23px;
+}
+
+.icone-change{
+    left : 20px;
 }
 
 
