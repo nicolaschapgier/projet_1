@@ -106,7 +106,7 @@ ul {
     font-family: var(--font-txt);
     font-size: 20px;
     text-transform: uppercase;
-    display: none;
+    /* display: none; */
 }
 
 ul li{
@@ -231,7 +231,6 @@ h2{
 
 
 
-
 /*********************************************Infos utiles***********************************/
 
 
@@ -317,7 +316,7 @@ h3{
     opacity: 30%;    
 } 
 
-/* Aux alentours */
+/**************************************Aux alentours***************/
 
 .main-alentours{
     display: flex;
@@ -334,4 +333,23 @@ h3{
 .main-alentours p{
     text-transform: uppercase;
     cursor: pointer;
+}
+
+
+
+.container-alentours{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-alentours div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-alentours img{
+    border-radius: 20px;
+    width: 75%;
+    height: 40vh;
 }
