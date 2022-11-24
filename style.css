@@ -287,9 +287,18 @@ h3{
     border-radius: 30px;
 }
 
+
 .paragraphe-hidden p{
+    background-color: blue;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+/* .coucou{
+    background-color: red;
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+} */
