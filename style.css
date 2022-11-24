@@ -274,7 +274,7 @@ h2{
 .paragraphe-hidden{
     border: 20px solid var(--cadre-txt);
     border-radius: 16px;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: var(--cadre-txt);
     margin: 5%;
     cursor: pointer;
@@ -288,7 +288,7 @@ h3{
 }
 
 
-.paragraphe-hidden p{
+.coucou{
     background-color: blue;
     width: 100%;
     overflow: hidden;
@@ -296,9 +296,9 @@ h3{
     white-space: nowrap;
 }
 
-/* .coucou{
+.appear{
     background-color: red;
     overflow: visible;
     text-overflow: clip;
     white-space: normal;
-} */
+}

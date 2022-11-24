@@ -22,3 +22,11 @@ switchBox.addEventListener('click',function(){
     }
 })
 
+let card = document.querySelector(".paragraphe-hidden");
+let paragraphe = document.querySelector(".coucou")
+
+card.addEventListener('click',function(){
+    console.log("spouew");
+    // paragraphe.classList.toggle("coucou");
+    paragraphe.classList.toggle("appear");
+} )
