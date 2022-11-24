@@ -154,7 +154,9 @@ h1{
 }
 
 .paragraphe h3,
-.paragraphe p{
+.paragraphe p,
+.paragraphe-hidden h3,
+.paragraphe-hidden p{
     color: white;
 }
 
@@ -275,18 +277,19 @@ h2{
     color: white;
     background-color: var(--cadre-txt);
     margin: 5%;
+    cursor: pointer;
 }
 
 h3{
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
     text-transform: uppercase;
-    background-color: var(--logo);
     font-size: 20px;
-    margin: 0 12%;
     height: 10vh;
-    border-radius: 30px; */
+    border-radius: 30px;
 }
 
+.paragraphe-hidden p{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
