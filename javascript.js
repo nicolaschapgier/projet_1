@@ -4,6 +4,8 @@ let body = document.querySelector("body");
 let imgShadow = document.querySelectorAll(".img-shadow")
 let moon = document.querySelector(".fa-moon");
 let sun = document.querySelector(".fa-sun");
+let title = document.querySelector(".title-background");
+
 
 // console.log(switchBox);
 // console.log(btn);
@@ -29,4 +31,5 @@ card.addEventListener('click',function(){
     console.log("spouew");
     paragraphe.classList.toggle("appear");
     body.classList.toggle("appear-body");
+    // title.classList.toggle("appear-body");
 } )

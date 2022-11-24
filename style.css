@@ -27,6 +27,7 @@
 body{
     background-color: var(--bg-color);
     transition: var(--dark-mode);
+    z-index: 1;
 }
 
 .body-change{
@@ -294,6 +295,8 @@ h3{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    transition: 2s;
+
 }
 
 .appear{
@@ -306,6 +309,11 @@ h3{
 }
 .appear-body{
     background-color: rgba(155, 155, 155, 155);
-    opacity: 60%;
-}
-:not(appear-body)
+    background-color: red;
+    backdrop-filter: blur(100%);
+    backdrop-filter: opacity(100%);
+    z-index: 1;
+    opacity: 30%;    
+} 
+
+
