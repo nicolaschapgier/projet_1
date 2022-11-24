@@ -157,7 +157,8 @@ h1{
 .paragraphe h3,
 .paragraphe p,
 .paragraphe-hidden h3,
-.paragraphe-hidden p{
+.paragraphe-hidden p,
+.paragraphe a{
     color: white;
 }
 
@@ -330,3 +331,7 @@ h3{
     height: 40vh;
 }
 
+.main-alentours p{
+    text-transform: uppercase;
+    cursor: pointer;
+}
