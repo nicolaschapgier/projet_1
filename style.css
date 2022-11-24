@@ -316,4 +316,17 @@ h3{
     opacity: 30%;    
 } 
 
+/* Aux alentours */
+
+.main-alentours{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-alentours div img{
+    border-radius: 20px;
+    width: 75%;
+    height: 40vh;
+}
 
