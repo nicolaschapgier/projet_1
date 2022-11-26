@@ -53,6 +53,9 @@ allParagraphe.forEach(function (paragraphe) {
   });
 });
 
+
+
+
 // ***************************************************** Devrait foncionner non ?***************************
 // card.addEventListener("click",bodyOpacity);
 
@@ -63,18 +66,14 @@ allParagraphe.forEach(function (paragraphe) {
 // }
 // **********************************************************************************************************
 
-
-
+// ***************************menu burger
 const hambuergerButton = document.querySelector(".nav-toggler");
-const navigation = document.querySelector(".nav-bar-mobil")
+const navigation = document.querySelector(".nav-bar-mobil");
+const mainTitle = document.querySelector("h1");
+hambuergerButton.addEventListener("click", toggleNav);
 
-
-
-hambuergerButton.addEventListener("click", toggleNav)
-
-function toggleNav(){
-    hambuergerButton.classList.toggle("active");
-    navigation.classList.toggle("active");
+function toggleNav() {
+  hambuergerButton.classList.toggle("active");
+  navigation.classList.toggle("active");
+  mainTitle.classList.toggle("hide-title");
 }
-
-
