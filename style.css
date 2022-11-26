@@ -170,6 +170,7 @@ h1{
 .img-shadow{
     box-shadow: 5px 5px 5px 5px #B0B0B0;
     transition: var(--dark-mode);
+    
 }
 
 .img-shadow-change{
@@ -226,7 +227,7 @@ h2{
 .second-container div img{
     border-radius: 20px;
     width: 75%;
-    height: 40vh;
+    height: 30vh;
 }
 
 
@@ -252,17 +253,16 @@ h2{
     flex-direction: column;
 }
 
-.contain-first-info div img
-{
+.contain-first-info div img{
     border-radius: 20px;
     width: 75%;
-    height: 40vh;
+    height: 30vh;
 }
 
 .contain-second-info iframe{
     border-radius: 20px;
     width: 100%;
-    height: 50vh;
+    height: 30vh;
 
 }
 
@@ -327,7 +327,7 @@ h3{
 .main-alentours div img{
     border-radius: 20px;
     width: 75%;
-    height: 40vh;
+    height: 30vh;
 }
 
 .main-alentours p{
