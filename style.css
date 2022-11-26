@@ -159,7 +159,7 @@ nav {
 }
 /* cubic-bezier(0.73, 0.11, 0.67, 0.84) */
 .nav-bar-mobil.active {
-  transform: translateY(-18%);
+  transform: translateY(-10%);
 }
 
 ul li {
