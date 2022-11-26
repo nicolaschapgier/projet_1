@@ -34,9 +34,7 @@ body{
     background-color: black;
 }
 
-nav{
-    margin: 20px;
-}
+
 
 header{
     background-image: url(assets/accueil.jpeg) ;
@@ -98,6 +96,10 @@ img{
 
 .fa-sun-change{
     opacity: 100%;
+}
+
+nav{
+    margin: 20px;
 }
 
 ul {
@@ -170,7 +172,6 @@ h1{
 .img-shadow{
     box-shadow: 5px 5px 5px 5px #B0B0B0;
     transition: var(--dark-mode);
-    
 }
 
 .img-shadow-change{
@@ -316,7 +317,7 @@ h3{
     opacity: 30%;    
 } 
 
-/**************************************Aux alentours***************/
+/**************************************Aux alentours*********************************************/
 
 .main-alentours{
     display: flex;
