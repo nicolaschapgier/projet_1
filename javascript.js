@@ -23,48 +23,27 @@ switchBox.addEventListener("click", function () {
   }
 });
 
-//départ  ********************************************************************
-// card.addEventListener("click", function () {
-//   console.log("spouew");
-//   paragraphe.classList.toggle("appear");
-//   body.classList.toggle("appear-body");
-// });
-// title.classList.toggle("appear-body");
+
 
 let allCards = document.querySelectorAll(".paragraphe-hidden");
-let card = document.querySelector(".paragraphe-hidden");
-
-allCards.forEach(function (card) {
-  card.addEventListener("click", function () {
-    console.log("spouew");
-    body.classList.toggle("appear-body");
-  });
-});
-
 let allParagraphe = document.querySelectorAll(".paragraphe-txt");
-let paragraphe = document.querySelector(".paragraphe-txt");
 
 console.log(allParagraphe);
-
-allParagraphe.forEach(function (paragraphe) {
-  paragraphe.addEventListener("click", function () {
-    console.log("spouew2");
-    paragraphe.classList.toggle("appear");
-  });
+allCards[0].addEventListener("click", function(){
+  allParagraphe[0].classList.toggle("appear");
+    body.classList.toggle("appear-body");
+});
+allCards[1].addEventListener("click", function(){
+  allParagraphe[1].classList.toggle("appear");
+  body.classList.toggle("appear-body");
+});
+allCards[2].addEventListener("click", function(){
+  allParagraphe[2].classList.toggle("appear");
+  body.classList.toggle("appear-body");
 });
 
 
 
-
-// ***************************************************** Devrait foncionner non ?***************************
-// card.addEventListener("click",bodyOpacity);
-
-// function bodyOpacity(paragraphe, body){
-//   console.log("spouew");
-//   paragraphe.classList.toggle("appear");
-//   body.classList.toggle("appear-body");
-// }
-// **********************************************************************************************************
 
 // ***************************menu burger
 const hambuergerButton = document.querySelector(".nav-toggler");
