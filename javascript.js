@@ -62,3 +62,19 @@ allParagraphe.forEach(function (paragraphe) {
 //   body.classList.toggle("appear-body");
 // }
 // **********************************************************************************************************
+
+
+
+const hambuergerButton = document.querySelector(".nav-toggler");
+const navigation = document.querySelector(".nav-bar-mobil")
+
+
+
+hambuergerButton.addEventListener("click", toggleNav)
+
+function toggleNav(){
+    hambuergerButton.classList.toggle("active");
+    navigation.classList.toggle("active");
+}
+
+
