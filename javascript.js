@@ -23,12 +23,42 @@ switchBox.addEventListener("click", function () {
   }
 });
 
+//départ  ********************************************************************
+// card.addEventListener("click", function () {
+//   console.log("spouew");
+//   paragraphe.classList.toggle("appear");
+//   body.classList.toggle("appear-body");
+// });
+// title.classList.toggle("appear-body");
+
+let allCards = document.querySelectorAll(".paragraphe-hidden");
 let card = document.querySelector(".paragraphe-hidden");
+
+allCards.forEach(function (card) {
+  card.addEventListener("click", function () {
+    console.log("spouew");
+    body.classList.toggle("appear-body");
+  });
+});
+
+let allParagraphe = document.querySelectorAll(".paragraphe-txt");
 let paragraphe = document.querySelector(".paragraphe-txt");
 
-card.addEventListener("click", function () {
-  console.log("spouew");
-  paragraphe.classList.toggle("appear");
-  body.classList.toggle("appear-body");
-  // title.classList.toggle("appear-body");
+console.log(allParagraphe);
+
+allParagraphe.forEach(function (paragraphe) {
+  paragraphe.addEventListener("click", function () {
+    console.log("spouew2");
+    paragraphe.classList.toggle("appear");
+  });
 });
+
+// ***************************************************** Devrait foncionner non ?***************************
+// card.addEventListener("click",bodyOpacity);
+
+// function bodyOpacity(paragraphe, body){
+//   console.log("spouew");
+//   paragraphe.classList.toggle("appear");
+//   body.classList.toggle("appear-body");
+// }
+// **********************************************************************************************************
