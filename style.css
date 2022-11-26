@@ -97,10 +97,6 @@ nav {
   margin: 20px 0;
 }
 
-.top-div {
-  display: flex;
-  justify-content: space-between;
-}
 
 .nav-toggler {
   position: fixed;
@@ -149,6 +145,7 @@ nav {
   min-height: 70vh;
   text-align: center;
   display: flex;
+  z-index: 3;
   flex-direction: column;
   justify-content: center;
   font-family: var(--font-txt);
