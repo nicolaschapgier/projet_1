@@ -12,6 +12,9 @@ let title = document.querySelector(".title-background");
 // console.log(sun);
 console.log(imgShadow);
 
+
+                                                  // *************************** Dark mode
+
 switchBox.addEventListener("click", function () {
   // console.log("spouew");
   btn.classList.toggle("btn-change");
@@ -24,44 +27,8 @@ switchBox.addEventListener("click", function () {
 });
 
 
+                                                  // *************************** Menu burger
 
-let allCards = document.querySelectorAll(".paragraphe-hidden");
-let allParagraphe = document.querySelectorAll(".paragraphe-txt");
-
-// console.log(allParagraphe);
-// allCards[0].addEventListener("click", function(){
-//   allParagraphe[0].classList.toggle("appear");
-//     body.classList.toggle("appear-body");
-// });
-// allCards[1].addEventListener("click", function(){
-//   allParagraphe[1].classList.toggle("appear");
-//   body.classList.toggle("appear-body");
-// });
-// allCards[2].addEventListener("click", function(){
-//   allParagraphe[2].classList.toggle("appear");
-//   body.classList.toggle("appear-body");
-// });
-
-allCards[0].addEventListener("click", openParagraphe0);
-allCards[1].addEventListener("click", openParagraphe1);
-allCards[2].addEventListener("click", openParagraphe2);
-
-
-function openParagraphe0(){
-  allParagraphe[0].classList.toggle("appear");
-  body.classList.toggle("appear-body");
-}
-function openParagraphe1(){
-  allParagraphe[1].classList.toggle("appear");
-  body.classList.toggle("appear-body");
-}
-function openParagraphe2(){
-  allParagraphe[2].classList.toggle("appear");
-  body.classList.toggle("appear-body");
-}
-
-
-// ***************************menu burger
 const hambuergerButton = document.querySelector(".nav-toggler");
 const navigation = document.querySelector(".nav-bar-mobil");
 const mainTitle = document.querySelector("h1");
@@ -72,3 +39,23 @@ function toggleNav() {
   navigation.classList.toggle("active");
   mainTitle.classList.toggle("hide-title");
 }
+
+
+                                                  //**************************** Infos Utiles
+
+let allCards = document.querySelectorAll(".paragraphe-hidden");
+let allParagraphe = document.querySelectorAll(".paragraphe-txt");
+
+// console.log(allParagraphe);
+allCards[0].addEventListener("click", function () {
+  allParagraphe[0].classList.toggle("appear");
+  body.classList.toggle("appear-body");
+});
+allCards[1].addEventListener("click", function () {
+  allParagraphe[1].classList.toggle("appear");
+  body.classList.toggle("appear-body");
+});
+allCards[2].addEventListener("click", function () {
+  allParagraphe[2].classList.toggle("appear");
+  body.classList.toggle("appear-body");
+});
