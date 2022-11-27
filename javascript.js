@@ -28,21 +28,37 @@ switchBox.addEventListener("click", function () {
 let allCards = document.querySelectorAll(".paragraphe-hidden");
 let allParagraphe = document.querySelectorAll(".paragraphe-txt");
 
-console.log(allParagraphe);
-allCards[0].addEventListener("click", function(){
+// console.log(allParagraphe);
+// allCards[0].addEventListener("click", function(){
+//   allParagraphe[0].classList.toggle("appear");
+//     body.classList.toggle("appear-body");
+// });
+// allCards[1].addEventListener("click", function(){
+//   allParagraphe[1].classList.toggle("appear");
+//   body.classList.toggle("appear-body");
+// });
+// allCards[2].addEventListener("click", function(){
+//   allParagraphe[2].classList.toggle("appear");
+//   body.classList.toggle("appear-body");
+// });
+
+allCards[0].addEventListener("click", openParagraphe0);
+allCards[1].addEventListener("click", openParagraphe1);
+allCards[2].addEventListener("click", openParagraphe2);
+
+
+function openParagraphe0(){
   allParagraphe[0].classList.toggle("appear");
-    body.classList.toggle("appear-body");
-});
-allCards[1].addEventListener("click", function(){
+  body.classList.toggle("appear-body");
+}
+function openParagraphe1(){
   allParagraphe[1].classList.toggle("appear");
   body.classList.toggle("appear-body");
-});
-allCards[2].addEventListener("click", function(){
+}
+function openParagraphe2(){
   allParagraphe[2].classList.toggle("appear");
   body.classList.toggle("appear-body");
-});
-
-
+}
 
 
 // ***************************menu burger
