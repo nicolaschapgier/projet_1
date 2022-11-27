@@ -254,6 +254,27 @@ footer div i {
   color: var(--logo);
 }
 
+/*à ajouter media querie*/
+
+/* footer{
+  display : flex;
+  justify-content : space-between
+}
+
+footer div{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  width: 80vw;
+}
+.icone{
+  display: flex;
+  justify-content: space-around;
+} */
+.left,
+.right{
+  display:none; 
+}
 /*********************************************Activités***********************************/
 
 .main-container {
