@@ -13,7 +13,7 @@
 :root {
   /* Color */
   --bg-color: #f1f1f1;
-  --title1: #61accf;
+  --title1: rgb(97, 172, 207);
   --cadre-txt: #1e3d59;
   --logo: #cd4669;
   /* Font */
@@ -436,20 +436,38 @@ h3 {
 /************************mediaqueries**************************************************/
 
 @media  screen and (max-width : 1440px) {
+  .nav-toggler{
+    display: none;
+  }
   .nav-bar-mobil{
     position: static;
     transform: none;
     flex-direction: row;
     justify-content: space-around;
-    height: auto;
+    align-items: center;
+    height: 8vh;
     width: 80vw;
+    background-color: rgba(97,172,207,0.7);
+    border-radius: 10px 0 0 10px;
   }
-  .nav-toggler{
-    display: none;
+  a{
+    padding: 18px;
+  }
+  a:hover{
+    background-color: var(--bg-color);
+    color: var(--title1);
+    border-radius: 7px;
+    transition: 0.3s;
   }
   header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+  h1{
+    color: black;
+    margin: 0;
+    width: 100%;
+    font-size: 80px;
   }
 }
