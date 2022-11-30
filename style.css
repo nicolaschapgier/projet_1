@@ -435,7 +435,7 @@ h3 {
 
 /************************mediaqueries**************************************************/
 
-@media  screen and (max-width : 1440px) {
+@media  screen and (min-width : 1440px) {
   .nav-toggler{
     display: none;
   }
@@ -470,4 +470,20 @@ h3 {
     width: 100%;
     font-size: 80px;
   }
+
+
+  footer{
+  display : flex;
+  justify-content : space-between;
+  align-items: center;
+  }
+footer div{
+  justify-content : center;
+  align-items : center;
+  width: 80vw;
+}
+.icone{
+  display: flex;
+  justify-content: space-around;
+}
 }
