@@ -142,18 +142,18 @@ nav {
 
 .nav-bar-mobil {
   background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
   width: 100vw;
   height: 60vh;
-  text-align: center;
-  top: 0;
-  display: flex;
   z-index: 3;
-  flex-direction: column;
-  justify-content: center;
   font-family: var(--font-txt);
   font-size: 20px;
   text-transform: uppercase;
   position: fixed;
+  top: 0;
   transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
 }
@@ -272,8 +272,8 @@ footer div{
   justify-content: space-around;
 } */
 .left,
-.right{
-  display:none; 
+.right {
+  display: none;
 }
 /*********************************************Activités***********************************/
 
@@ -302,7 +302,7 @@ h2 {
 }
 
 .fa-mountain-sun,
-.fa-snowflake{
+.fa-snowflake {
   margin-left: 10%;
 }
 
@@ -312,8 +312,6 @@ h2 {
   width: 75%;
   height: 30vh;
 }
-
-
 
 /*********************************************Infos utiles***********************************/
 
@@ -375,7 +373,6 @@ h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: 2s;
 }
 
 .appear {
@@ -393,6 +390,7 @@ h3 {
   backdrop-filter: blur(100%);
   backdrop-filter: opacity(100%);
   z-index: 1;
+  transition: 2s;
   opacity: 30%;
 }
 
@@ -430,4 +428,28 @@ h3 {
   border-radius: 20px;
   width: 75%;
   height: 40vh;
+}
+
+
+
+
+/************************mediaqueries**************************************************/
+
+@media  screen and (max-width : 1440px) {
+  .nav-bar-mobil{
+    position: static;
+    transform: none;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    width: 80vw;
+  }
+  .nav-toggler{
+    display: none;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }

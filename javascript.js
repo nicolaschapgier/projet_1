@@ -60,9 +60,9 @@ allCards[2].addEventListener("click", function () {
   body.classList.toggle("appear-body");
 });
 
-// allCards[0].addEventListener("click",change(allParagraphe[0]));
-// allCards[1].addEventListener("click",change(1));
-// allCards[2].addEventListener("click",change(2));
+allCards[0].addEventListener("click",change(allParagraphe[0]));
+allCards[1].addEventListener("click",change(1));
+allCards[2].addEventListener("click",change(2));
 
 // function change(value1){
 //   console.log(value1);
