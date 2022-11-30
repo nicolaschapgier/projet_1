@@ -40,7 +40,7 @@ header {
   width: 100%;
   height: 60vh;
 }
-header img{
+header img {
   display: none;
 }
 
@@ -463,7 +463,19 @@ h3 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background: none;
+    padding: 0;
   }
+
+  header img {
+    display: initial;
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 70%;
+    margin: 0;
+  }
+
   h1 {
     color: black;
     margin: 0;
@@ -486,19 +498,8 @@ h3 {
     display: flex;
     justify-content: space-around;
   }
-  header{
-    background: none;
-    padding: 0;
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
-    /* width : 100vw; */
-}
-header img{
-  display: initial;
-  position: absolute;
-  z-index: -2;
-  width: 100%;
-  height: 70%;
-  margin : 0;
-}
+  .right i,
+  .left i {
+    color: white;
+  }
 }
