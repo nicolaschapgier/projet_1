@@ -5,7 +5,8 @@ let imgShadow = document.querySelectorAll(".img-shadow");
 let moon = document.querySelector(".fa-moon");
 let sun = document.querySelector(".fa-sun");
 let title = document.querySelector(".title-background");
-
+let h1 = document.querySelector("h1");
+let h1Change = document.querySelector(".h1-change");
 // console.log(switchBox);
 // console.log(btn);
 // console.log(moon);
@@ -21,6 +22,7 @@ switchBox.addEventListener("click", function () {
   body.classList.toggle("body-change");
   moon.classList.toggle("fa-moon-change");
   sun.classList.toggle("fa-sun-change");
+  h1.classList.toggle("h1-change");
   for (let i = 0; i < imgShadow.length; i++) {
     imgShadow[i].classList.toggle("img-shadow-change");
   }

@@ -496,7 +496,10 @@ h3 {
     height: 15vh;
     font-size: 80px;
   }
-
+  .h1-change{
+    backdrop-filter: blur(10px) contrast(150%) brightness(20%);
+    transition : var(--dark-mode);
+  }
   h2 {
     margin: 0 10%;
   }
@@ -545,5 +548,5 @@ h3 {
   .right i,
   .left i {
     color: white;
-  }
+  }  
 }
