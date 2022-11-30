@@ -453,7 +453,7 @@ h3 {
   a {
     padding: 18px;
   }
-  a:hover {
+  .nav-bar-mobil a:hover {
     background-color: var(--bg-color);
     color: var(--title1);
     border-radius: 7px;
@@ -483,6 +483,8 @@ h3 {
     font-size: 80px;
     text-shadow: 1px 1px 0 white;
   }
+
+
 
   footer {
     display: flex;

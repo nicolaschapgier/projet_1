@@ -46,26 +46,32 @@ function toggleNav() {
 let allCards = document.querySelectorAll(".paragraphe-hidden");
 let allParagraphe = document.querySelectorAll(".paragraphe-txt");
 
-console.log(allParagraphe);
-allCards[0].addEventListener("click", function () {
-  allParagraphe[0].classList.toggle("appear");
-  body.classList.toggle("appear-body");
-});
-allCards[1].addEventListener("click", function () {
-  allParagraphe[1].classList.toggle("appear");
-  body.classList.toggle("appear-body");
-});
-allCards[2].addEventListener("click", function () {
-  allParagraphe[2].classList.toggle("appear");
-  body.classList.toggle("appear-body");
-});
+// console.log(allParagraphe);
+// allCards[0].addEventListener("click", function () {
+//   allParagraphe[0].classList.toggle("appear");
+//   body.classList.toggle("appear-body");
+// });
+// allCards[1].addEventListener("click", function () {
+//   allParagraphe[1].classList.toggle("appear");
+//   body.classList.toggle("appear-body");
+// });
+// allCards[2].addEventListener("click", function () {
+//   allParagraphe[2].classList.toggle("appear");
+//   body.classList.toggle("appear-body");
+// });
 
-allCards[0].addEventListener("click",change(allParagraphe[0]));
-allCards[1].addEventListener("click",change(1));
-allCards[2].addEventListener("click",change(2));
+function change(value1){
+  // console.log(value1);
+  // body.classList.toggle("appear-body");
+  value1.classList.toggle("appear");
+}
+for (let i = 0; i< allCards.length;i++){
+  allCards[i].addEventListener("click", () => change(allParagraphe[i]));
+}
 
-// function change(value1){
-//   console.log(value1);
-//   // body.classList.toggle("appear-body");
-//   value1.classList.toggle("appear");
-// }
+
+// *ça fonctionne en dessous
+// allCards[0].addEventListener("click", () => change(allParagraphe[0]));
+// allCards[1].addEventListener("click", () => { change (allParagraphe[1])});
+// allCards[2].addEventListener("click", () => { change (allParagraphe[2])});
+
