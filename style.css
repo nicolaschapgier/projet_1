@@ -359,7 +359,7 @@ h2 {
   border-radius: 16px;
   color: rgb(255, 255, 255);
   background-color: var(--cadre-txt);
-  margin: 5%;
+  margin: 5% 5% 0 5%;
   cursor: pointer;
 }
 
@@ -489,13 +489,30 @@ h3 {
     font-size: 80px;
   }
 
+  h2{
+    margin : 0 10%;
+  }
+  
+  .first-container h2{
+    margin-top : 20%;
+  }
+  
   .first-container div img,
   .contain-first-info div img,
   .main-alentours div img,
-  .container-alentours img{
+  .container-alentours img,
+  .second-container div img{
     height: 80vh;
   }
 
+  .coucou{
+    margin-top: 15%;
+  }
+
+  .transport p{
+    margin : 5% 5% 0 5%;
+  }
+  
   footer {
     display: flex;
     justify-content: space-between;
