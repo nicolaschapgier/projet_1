@@ -91,7 +91,7 @@ img {
 .fa-sun {
   opacity: 0%;
   position: absolute;
-  margin-left: 8px;
+  margin-left: 12px;
 }
 
 .fa-sun-change {
@@ -495,10 +495,13 @@ h3 {
     width: 100%;
     height: 15vh;
     font-size: 80px;
+    transition: var(--dark-mode);
   }
-  .h1-change{
+  .h1-change {
     backdrop-filter: blur(10px) contrast(150%) brightness(20%);
-    transition : var(--dark-mode);
+    transition: var(--dark-mode);
+    border-top: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
   }
   h2 {
     margin: 0 10%;
@@ -548,5 +551,5 @@ h3 {
   .right i,
   .left i {
     color: white;
-  }  
+  }
 }
