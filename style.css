@@ -436,6 +436,14 @@ h3 {
 /************************mediaqueries**************************************************/
 
 @media screen and (min-width: 1440px) {
+  /* font-size */
+  h3 {
+    font-size: 50px;
+  }
+  .paragraphe-txt,
+  .paragraphe {
+    font-size: 22px;
+  }
   .nav-toggler {
     display: none;
   }
@@ -485,34 +493,41 @@ h3 {
     align-items: center;
     margin: 0;
     width: 100%;
-    height : 15vh;
+    height: 15vh;
     font-size: 80px;
   }
 
-  h2{
-    margin : 0 10%;
+  h2 {
+    margin: 0 10%;
   }
-  
-  .first-container h2{
-    margin-top : 20%;
+
+  .first-container h2 {
+    margin-top: 20%;
   }
-  
+
   .first-container div img,
   .contain-first-info div img,
   .main-alentours div img,
   .container-alentours img,
-  .second-container div img{
+  .second-container div img {
     height: 80vh;
   }
 
-  .coucou{
+  .coucou {
     margin-top: 15%;
   }
 
-  .transport p{
-    margin : 5% 5% 0 5%;
+  .transport p {
+    margin: 5% 5% 0 5%;
+    display: flex;
+    flex-direction: column;
   }
-  
+
+  .transport-icone i {
+    color: white;
+    margin-bottom: 30px;
+  }
+
   footer {
     display: flex;
     justify-content: space-between;
