@@ -484,7 +484,12 @@ h3 {
     text-shadow: 1px 1px 0 white;
   }
 
-
+  .first-container div img,
+  .contain-first-info div img,
+  .main-alentours div img,
+  .container-alentours img{
+    height: 80vh;
+  }
 
   footer {
     display: flex;
