@@ -6,6 +6,8 @@
   text-decoration: none;
   color: black;
 }
+html{scroll-behavior:smooth}
+
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap");
 @import url("https://css.gg/css?=|facebook");
@@ -292,6 +294,10 @@ footer div{
   flex-direction: column;
 }
 
+.title-choice{
+  display: none;
+}
+
 h2 {
   display: flex;
   justify-content: center;
@@ -522,6 +528,26 @@ h3 {
   h2 {
     margin: 0 10%;
   }
+
+
+  .choice h2{
+    background-color: initial;
+    backdrop-filter: blur(10px) contrast(150%);
+  }
+  
+  
+  .title-choice{
+    display: initial;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    padding: 1%;
+    border: 2px solid white;
+  }
+  .title-choice a{
+    color: white;
+  }
+
 
   .first-container h2 {
     margin-top: 20%;
