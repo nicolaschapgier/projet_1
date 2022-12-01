@@ -52,7 +52,7 @@ let allParagraphe = document.querySelectorAll(".paragraphe-txt");
 function change(value1){
   value1.classList.toggle("appear");
   // console.log(value1);
-  // body.classList.toggle("appear-body");
+  body.classList.toggle("appear-body");
 }
 for (let i = 0; i< allCards.length;i++){
   allCards[i].addEventListener("click", () => change(allParagraphe[i]));

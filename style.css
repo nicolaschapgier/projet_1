@@ -361,6 +361,8 @@ h2 {
   background-color: var(--cadre-txt);
   margin: 5% 5% 0 5%;
   cursor: pointer;
+  transition: 2s;
+  transform: scale(1.1);
 }
 
 h3 {
@@ -371,7 +373,6 @@ h3 {
 }
 
 .paragraphe-txt {
-  /* background-color: blue; */
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -379,7 +380,6 @@ h3 {
 }
 
 .appear {
-  /* background-color: red; */
   overflow: visible;
   text-overflow: clip;
   white-space: normal;
@@ -388,13 +388,9 @@ h3 {
 }
 
 .appear-body {
-  background-color: rgba(155, 155, 155, 155);
-  background-color: red;
-  backdrop-filter: blur(100%);
-  backdrop-filter: opacity(100%);
+  background-color: rgb(149, 149, 149);
   z-index: 1;
   transition: 2s;
-  opacity: 30%;
 }
 
 /**************************************Aux alentours*********************************************/
@@ -458,7 +454,7 @@ h3 {
   .nav-toggler {
     display: none;
   }
-  
+
   .nav-bar-mobil {
     position: static;
     transform: none;
@@ -486,12 +482,12 @@ h3 {
     background: none;
     padding: 0;
   }
-  .nav-bar-mobil li a{
+  .nav-bar-mobil li a {
     animation-name: navbar-appear;
     animation-duration: 3s;
   }
-  @keyframes navbar-appear{
-    from{
+  @keyframes navbar-appear {
+    from {
       opacity: 0;
     }
     to {
