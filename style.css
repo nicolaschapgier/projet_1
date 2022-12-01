@@ -446,7 +446,7 @@ h3 {
 
 /************************mediaqueries**************************************************/
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1000px) {
   /* font-size */
   h3 {
     font-size: 50px;
@@ -562,5 +562,6 @@ h3 {
   .right i,
   .left i {
     color: white;
+    cursor: auto;
   }
 }
