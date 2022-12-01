@@ -457,7 +457,6 @@ h3 {
   .nav-toggler {
     display: none;
   }
-
   .nav-bar-mobil {
     position: static;
     transform: none;
@@ -555,7 +554,7 @@ h3 {
   .main-alentours div img,
   .container-alentours img,
   .second-container div img {
-    height: 80vh;
+    height: 100vh;
   }
 
   .coucou {
