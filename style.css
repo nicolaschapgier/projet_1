@@ -6,8 +6,9 @@
   text-decoration: none;
   color: black;
 }
-html{scroll-behavior:smooth}
-
+html {
+  scroll-behavior: smooth;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap");
 @import url("https://css.gg/css?=|facebook");
@@ -294,7 +295,7 @@ footer div{
   flex-direction: column;
 }
 
-.title-choice{
+.title-choice {
   display: none;
 }
 
@@ -388,7 +389,6 @@ h3 {
   text-overflow: clip;
   white-space: normal;
   transition: 0.4s;
-
 }
 
 .appear-body {
@@ -529,14 +529,11 @@ h3 {
     margin: 0 10%;
   }
 
-
-  .choice h2{
-    background-color: initial;
-    backdrop-filter: blur(10px) contrast(150%);
+  .choice h2 {
+    background-color: var(--logo);
   }
-  
-  
-  .title-choice{
+
+  .title-choice {
     display: initial;
     width: 60px;
     height: 60px;
@@ -544,10 +541,9 @@ h3 {
     padding: 1%;
     border: 2px solid white;
   }
-  .title-choice a{
+  .title-choice a {
     color: white;
   }
-
 
   .first-container h2 {
     margin-top: 20%;
