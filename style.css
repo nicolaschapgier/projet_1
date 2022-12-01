@@ -549,6 +549,7 @@ h3 {
     margin-top: 20%;
   }
 
+  
   .first-container div img,
   .contain-first-info div img,
   .main-alentours div img,
@@ -556,7 +557,24 @@ h3 {
   .second-container div img {
     height: 100vh;
   }
+/* test pour le responsive */
+  /* .test{
+    display: flex;
+    align-items: center;
+  }
+  
+  .first-container div img{
+    width : 30%;
+    height: 30%;
+    margin : auto;
+    margin-left: 1%;
+  }
 
+
+  .paragraphe{
+    height: 50% ;
+  } */
+/* fin test pour le responsive */
   .coucou {
     margin-top: 15%;
   }
