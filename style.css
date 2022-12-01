@@ -638,6 +638,13 @@ h3 {
     align-items: center;
     text-align: center;
   }
+
+  .paragraphe-hidden h3{
+    font-size: 20px;
+  }
+  .paragraphe-hidden p{
+    font-size: 12px;
+  }
   
   .transport p {
     margin: 5% 5% 0 5%;
