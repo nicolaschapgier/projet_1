@@ -454,19 +454,19 @@ h3 {
   .paragraphe {
     font-size: 22px;
   }
-  .nav-toggler {
-    display: none;
-  }
   .nav-bar-mobil {
+    height: 8vh;
+    width: 80vw;
     position: static;
     transform: none;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 8vh;
-    width: 80vw;
     background-color: rgba(97, 172, 207, 0.7);
     border-radius: 0 0 0 10px;
+  }
+  .nav-toggler {
+    display: none;
   }
   a {
     padding: 18px;
