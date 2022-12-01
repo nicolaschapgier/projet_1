@@ -295,6 +295,8 @@ footer div{
   flex-direction: column;
 }
 
+
+
 .title-choice {
   display: none;
 }
@@ -529,52 +531,80 @@ h3 {
     margin: 0 10%;
   }
 
+  .choice{
+    display: flex;
+  }
+  
   .choice h2 {
     background-color: var(--logo);
   }
 
   .title-choice {
-    display: initial;
-    width: 60px;
+    display: flex;
+    width: 270px;
     height: 60px;
     font-size: 30px;
     padding: 1%;
+    margin: 20px;
     border: 2px solid white;
   }
   .title-choice a {
     color: white;
   }
-
+.first-container{
+  justify-content: center;
+  align-items: center;
+}
   .first-container h2 {
-    margin-top: 20%;
+    margin-top: 7%;
   }
-
+#ete,
+#hiver{
+  width : 250px;
+  height : auto;
+}
   
+.desktop-img p{
+  margin-left : -5%;
+}
+.reverse p{
+  margin-right: -5%;
+  z-index: 2;
+}
+
   .first-container div img,
   .contain-first-info div img,
   .main-alentours div img,
   .container-alentours img,
   .second-container div img {
-    height: 100vh;
+    width: 75%;
+    margin-left : 1.3rem;
+    margin-top : 20px;
   }
-/* test pour le responsive */
-  /* .test{
-    display: flex;
-    align-items: center;
+
+  .first-container-main,
+  .second-container-main{
+    display : flex;
+    flex-direction: column;
+    width : 80%;
   }
   
-  .first-container div img{
-    width : 30%;
-    height: 30%;
-    margin : auto;
-    margin-left: 1%;
+  .desktop-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
-
-
-  .paragraphe{
-    height: 50% ;
-  } */
-/* fin test pour le responsive */
+  
+  .reverse{
+    flex-direction: row-reverse;
+    margin-right: 1.3rem;
+  }
+  
+  .second-container{
+    justify-content: center;
+    align-items: center;
+  }
   .coucou {
     margin-top: 15%;
   }
