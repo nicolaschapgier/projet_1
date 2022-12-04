@@ -6,9 +6,6 @@
   text-decoration: none;
   color: black;
 }
-html {
-  scroll-behavior: smooth;
-}
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap");
 @import url("https://css.gg/css?=|facebook");
@@ -16,7 +13,7 @@ html {
 :root {
   /* Color */
   --bg-color: #f1f1f1;
-  --title1: rgb(97, 172, 207);
+  --title1: #61accf;
   --cadre-txt: #1e3d59;
   --logo: #cd4669;
   /* Font */
@@ -37,19 +34,44 @@ body {
 }
 
 header {
-  background-image: url(assets/accueil.jpeg);
-  background-size: cover;
-  padding-top: 20px;
-  width: 100%;
-  height: 60vh;
-}
-header img {
-  display: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  justify-content: center;
+  /* padding-top: 20px; */
+  width: 100vw;
+  height: 50vh;
 }
 
 img {
-  margin-top: 10%;
+  /* margin-top: 10%; */
+  width: 100%;
+  height: auto;
 }
+
+.carousel{
+white-space: nowrap;
+overflow: hidden;
+}
+
+.car1{
+    transition : transform 2s ease;
+}
+.car2{
+    transition : transform 2s ease;
+    transform : translateX(100%);
+}
+.car3{
+    transition : transform 2s ease;
+    transform : translateX(200%);
+}
+.car4{
+    transition : transform 2s ease;
+    transform : translateX(300%);
+}
+
+
+
 
 .dark-mode {
   background-color: black;
@@ -94,7 +116,7 @@ img {
 .fa-sun {
   opacity: 0%;
   position: absolute;
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 .fa-sun-change {
@@ -148,18 +170,18 @@ nav {
 
 .nav-bar-mobil {
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
   width: 100vw;
   height: 60vh;
+  text-align: center;
+  top: 0;
+  display: flex;
   z-index: 3;
+  flex-direction: column;
+  justify-content: center;
   font-family: var(--font-txt);
   font-size: 20px;
   text-transform: uppercase;
   position: fixed;
-  top: 0;
   transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
 }
@@ -178,7 +200,7 @@ ul li a {
 
 h1 {
   margin-top: 30%;
-  color: white;
+  color: black;
   border-radius: 20px;
   font-size: 50px;
   font-family: var(--nav-bar);
@@ -263,20 +285,20 @@ footer div i {
 /*à ajouter media querie*/
 
 /* footer{
-  display : flex;
-  justify-content : space-between
-}
-
-footer div{
-  display : flex;
-  justify-content : center;
-  align-items : center;
-  width: 80vw;
-}
-.icone{
-  display: flex;
-  justify-content: space-around;
-} */
+    display : flex;
+    justify-content : space-between
+  }
+  
+  footer div{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width: 80vw;
+  }
+  .icone{
+    display: flex;
+    justify-content: space-around;
+  } */
 .left,
 .right {
   display: none;
@@ -293,12 +315,6 @@ footer div{
 .second-container {
   display: flex;
   flex-direction: column;
-}
-
-
-
-.title-choice {
-  display: none;
 }
 
 h2 {
@@ -368,7 +384,7 @@ h2 {
   border-radius: 16px;
   color: rgb(255, 255, 255);
   background-color: var(--cadre-txt);
-  margin: 5% 5% 0 5%;
+  margin: 5%;
   cursor: pointer;
 }
 
@@ -380,22 +396,30 @@ h3 {
 }
 
 .paragraphe-txt {
+  /* background-color: blue; */
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: 2s;
 }
 
 .appear {
+  /* background-color: red; */
   overflow: visible;
   text-overflow: clip;
   white-space: normal;
-  transition: 0.4s;
+  transition: 2s;
+  z-index: 4;
 }
 
 .appear-body {
-  background-color: rgb(149, 149, 149);
-  transition: 0.4s;
+  background-color: rgba(155, 155, 155, 155);
+  background-color: red;
+  backdrop-filter: blur(100%);
+  backdrop-filter: opacity(100%);
+  z-index: 1;
+  opacity: 30%;
 }
 
 /**************************************Aux alentours*********************************************/
@@ -432,241 +456,4 @@ h3 {
   border-radius: 20px;
   width: 75%;
   height: 40vh;
-}
-
-.transport p {
-  margin: 5% 5% 0 5%;
-  display: flex;
-  flex-direction: column;
-}
-
-.transport-icone i {
-  color: white;
-  margin-bottom: 30px;
-}
-
-/************************mediaqueries**************************************************/
-
-@media screen and (min-width: 1000px) {
-  /* font-size */
-  h3 {
-    font-size: 50px;
-  }
-  .paragraphe-txt,
-  .paragraphe {
-    font-size: 22px;
-  }
-  .nav-bar-mobil {
-    height: 8vh;
-    width: 80vw;
-    position: static;
-    transform: none;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(97, 172, 207, 0.7);
-    border-radius: 0 0 0 10px;
-  }
-  .nav-toggler {
-    display: none;
-  }
-  a {
-    padding: 18px;
-  }
-  .nav-bar-mobil a:hover {
-    background-color: var(--bg-color);
-    color: var(--title1);
-    border-radius: 7px;
-    transition: 0.3s;
-  }
-  header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background: none;
-    padding: 0;
-  }
-  .nav-bar-mobil li a {
-    animation-name: navbar-appear;
-    animation-duration: 3s;
-  }
-  @keyframes navbar-appear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 100%;
-    }
-  }
-  header img {
-    display: initial;
-    position: absolute;
-    z-index: -2;
-    width: 100%;
-    height: 80%;
-    margin: 0;
-  }
-
-  h1 {
-    backdrop-filter: blur(10px) contrast(150%);
-    color: whitesmoke;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    border-radius: 0;
-    align-items: center;
-    margin: 0;
-    width: 100%;
-    height: 15vh;
-    font-size: 80px;
-    transition: var(--dark-mode);
-    /* test */
-  }
-  .h1-change {
-    backdrop-filter: blur(10px) contrast(150%) brightness(20%);
-    transition: var(--dark-mode);
-    border-top: 1px solid rgb(0, 0, 0);
-    border-bottom: 1px solid rgb(0, 0, 0);
-  }
-  h2 {
-    margin: 0 10%;
-  }
-
-  .choice{
-    display: flex;
-  }
-  
-  .choice h2 {
-    background-color: var(--logo);
-  }
-
-  .title-choice {
-    display: flex;
-    width: 270px;
-    height: 60px;
-    font-size: 30px;
-    padding: 1%;
-    margin: 20px;
-    border: 2px solid white;
-  }
-  .title-choice a {
-    color: white;
-  }
-.first-container{
-  justify-content: center;
-  align-items: center;
-}
-  .first-container h2 {
-    margin-top: 7%;
-  }
-#ete,
-#hiver{
-  width : 250px;
-  height : auto;
-}
-  
-.desktop-img p{
-  margin-left : -5%;
-}
-.reverse p{
-  margin-right: -5%;
-  z-index: 2;
-}
-
-  .first-container div img,
-  .main-alentours div img,
-  .container-alentours img,
-  .second-container div img {
-    width: 75%;
-    margin-left : 1.3rem;
-    margin-top : 20px;
-  }
-
-  .first-container-main,
-  .second-container-main{
-    display : flex;
-    flex-direction: column;
-    width : 80%;
-  }
-  
-  .desktop-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .reverse{
-    flex-direction: row-reverse;
-    margin-right: 1.3rem;
-  }
-  
-  .second-container{
-    justify-content: center;
-    align-items: center;
-  }
-  .coucou {
-    margin-top: 15%;
-  }
-
-
-
-  .contain-first-info{
-    flex-direction: row;
-    justify-content: space-between;
-    /* margin: 10px 0; */
-    margin-top: 20%;
-  }
-  
-  .contain-first-info div{
-    width: 30%;
-    margin : 0 10px 0 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .contain-first-info .img-shadow{
-    margin: 0;
-  }
-  
-  .contain-first-info .paragraphe-hidden{
-    margin-top : 14px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .transport p {
-    margin: 5% 5% 0 5%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .transport-icone i {
-    color: white;
-    margin-bottom: 30px;
-  }
-
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  footer div {
-    justify-content: center;
-    align-items: center;
-    width: 80vw;
-  }
-  .icone {
-    display: flex;
-    justify-content: space-around;
-  }
-  .right i,
-  .left i {
-    color: white;
-    cursor: auto;
-  }
 }
