@@ -792,12 +792,24 @@ h3 {
     margin-top : 20px;
   }
 .main-alentours{
-  margin-top: 15%;
+  margin-top: 20%;
+}
+
+.main-alentours div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-alentours div a{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
 }
   .main-alentours div img{
     margin-top: 0;
-    width: 40%;
-    height: 80%;
+    width: 50%;
   }
 
   .first-container-main,
@@ -869,7 +881,9 @@ h3 {
   .paragraphe-hidden p{
     font-size: 12px;
   }
-  
+  .paragraphe{
+    margin : 0;
+  }
   .contain-second-info div{
     flex-direction: row;
   }
