@@ -737,6 +737,7 @@ h3 {
   }
   .flex-container div img{
     width : 60%;
+    margin-bottom: 30px;
   }
   .choice{
     display: flex;
