@@ -689,6 +689,7 @@ h3 {
     flex-wrap: wrap;
     background: none;
     padding: 0;
+    height: 90vh;
   }
   .nav-bar-mobil li a {
     animation-name: navbar-appear;
@@ -791,9 +792,6 @@ h3 {
     margin-left : 1.3rem;
     margin-top : 20px;
   }
-.main-alentours{
-  margin-top: 20%;
-}
 
 .main-alentours div{
   display: flex;
@@ -805,7 +803,7 @@ h3 {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 60%;
 }
   .main-alentours div img{
     margin-top: 0;
