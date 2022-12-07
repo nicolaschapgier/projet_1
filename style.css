@@ -789,6 +789,10 @@ h3 {
     flex-direction: column;
     width : 80%;
   }
+
+  .mobil-picture{
+    display : none;
+  }
   
   .desktop-img{
     display: flex;
