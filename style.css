@@ -712,7 +712,7 @@ h3 {
   }
 
   h1 {
-    backdrop-filter: blur(10px) contrast(150%);
+    backdrop-filter: blur(10px) brightness(150%);
     color: whitesmoke;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
