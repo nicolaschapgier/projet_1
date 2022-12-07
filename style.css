@@ -530,9 +530,8 @@ h3 {
   width: 75%;
   height: 40vh;
 }
-.container-alentours .paragraphe{
-  margin : 30px;
-  
+.container-alentours .paragraphe {
+  margin: 30px;
 }
 .transport p {
   margin: 5% 5% 0 5%;
@@ -878,10 +877,10 @@ h3 {
     margin: 0;
   }
 
-  .flex-container .paragraphe{
-    margin : 10px 0 50px 0;
+  .flex-container .paragraphe {
+    margin: 10px 0 50px 0;
   }
-  
+
   .contain-second-info div {
     flex-direction: row;
   }

@@ -13,8 +13,7 @@ let h1Change = document.querySelector(".h1-change");
 // console.log(sun);
 console.log(imgShadow);
 
-
-                                                  // *************************** Dark mode
+// *************************** Dark mode
 
 switchBox.addEventListener("click", function () {
   // console.log("spouew");
@@ -28,8 +27,7 @@ switchBox.addEventListener("click", function () {
   }
 });
 
-
-                                                  // *************************** Menu burger
+// *************************** Menu burger
 
 const hambuergerButton = document.querySelector(".nav-toggler");
 const navigation = document.querySelector(".nav-bar-mobil");
@@ -42,38 +40,35 @@ function toggleNav() {
   mainTitle.classList.toggle("hide-title");
 }
 
-                                                  // *************************** Carousel
+// *************************** Carousel
 
 let counter = 1;
-setInterval(function() {
+setInterval(function () {
   document.getElementById("radio" + counter).checked = true;
   counter++;
-  if (counter > 4){
+  if (counter > 4) {
     counter = 1;
-  } 
+  }
 }, 5000);
 
-
-                                                  //**************************** Infos Utiles
+//**************************** Infos Utiles
 
 let allCards = document.querySelectorAll(".paragraphe-hidden");
 let allParagraphe = document.querySelectorAll(".paragraphe-txt");
 
-
-function change(value1){
+function change(value1) {
   value1.classList.toggle("appear");
   // console.log(value1);
   body.classList.toggle("appear-body");
 }
-for (let i = 0; i< allCards.length;i++){
+for (let i = 0; i < allCards.length; i++) {
   allCards[i].addEventListener("click", () => change(allParagraphe[i]));
 }
 
-
-h1.addEventListener("click",function(){
-  setTimeout(function() {
-  body.style.opacity = "0.3";
-  body.style.transform = "translateX(-100%)";
-  body.style.transition = "1s";
+h1.addEventListener("click", function () {
+  setTimeout(function () {
+    body.style.opacity = "0.3";
+    body.style.transform = "translateX(-100%)";
+    body.style.transition = "1s";
   }, 500);
-})
+});
