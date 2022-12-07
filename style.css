@@ -788,7 +788,9 @@ h3 {
     margin-left: 1.3rem;
     margin-top: 20px;
   }
-
+  .container-alentours img {
+    width: 40%;
+  }
   .main-alentours div {
     display: flex;
     justify-content: center;

@@ -64,11 +64,3 @@ function change(value1) {
 for (let i = 0; i < allCards.length; i++) {
   allCards[i].addEventListener("click", () => change(allParagraphe[i]));
 }
-
-h1.addEventListener("click", function () {
-  setTimeout(function () {
-    body.style.opacity = "0.3";
-    body.style.transform = "translateX(-100%)";
-    body.style.transition = "1s";
-  }, 500);
-});
