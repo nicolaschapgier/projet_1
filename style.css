@@ -791,6 +791,14 @@ h3 {
     margin-left : 1.3rem;
     margin-top : 20px;
   }
+.main-alentours{
+  margin-top: 15%;
+}
+  .main-alentours div img{
+    margin-top: 0;
+    width: 40%;
+    height: 80%;
+  }
 
   .first-container-main,
   .second-container-main{
