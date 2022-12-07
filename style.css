@@ -862,6 +862,9 @@ h3 {
     font-size: 12px;
   }
   
+  .contain-second-info div{
+    flex-direction: row;
+  }
   .transport p {
     margin: 5% 5% 0 5%;
     display: flex;
