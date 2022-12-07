@@ -764,6 +764,10 @@ h3 {
   .first-container h2 {
     margin-top: 7%;
   }
+
+.main-container-desktop{
+  margin-top: 5%;
+}
 #ete,
 #hiver{
   width : 250px;
