@@ -874,6 +874,11 @@ h3 {
   .paragraphe {
     margin: 0;
   }
+
+  .flex-container .paragraphe{
+    margin : 10px 0 50px 0;
+  }
+  
   .contain-second-info div {
     flex-direction: row;
   }
