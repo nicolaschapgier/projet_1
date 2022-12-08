@@ -15,7 +15,7 @@ console.log(imgShadow);
 
 // *************************** Dark mode
 
-switchBox.addEventListener("click", function () {
+switchBox.addEventListener("click", () => {
   // console.log("spouew");
   btn.classList.toggle("btn-change");
   body.classList.toggle("body-change");
